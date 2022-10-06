@@ -6,4 +6,12 @@ lvim.plugins = {
 		end,
 	},
 	"p00f/nvim-ts-rainbow",
+	{
+		"npxbr/glow.nvim",
+		ft = { "markdown" },
+		config = function()
+			require("glow").setup({})
+		end,
+	},
+	"norcalli/nvim-colorizer.lua",
 }

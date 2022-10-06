@@ -1,14 +1,24 @@
+-- Lunar Vim
 lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "onedarker"
+lvim.builtin.notify.active = true
+
+-- Alpha
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
-lvim.builtin.notify.active = true
+
+-- Toggleterm
 lvim.builtin.terminal.active = true
 lvim.builtin.terminal.insert_mappings = true
 lvim.builtin.terminal.open_mapping = [[<C-\>]]
+
+-- Nvim-tree
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
+
+-- DAP
+lvim.builtin.dap.active = true
 
 -- if you don't want all the parsers change this to a table of the ones you want
 -- lvim.builtin.treesitter.ensure_installed = {
@@ -42,6 +52,8 @@ if vim.fn.has("wsl") == 1 then
 			["*"] = "/mnt/c/Development/WSL/ClipboardSync/win32yank.exe -o --lf",
 		},
 	}
+else
+	vim.g.clipboard = "unamedplus"
 end
 
 local o = vim.opt
