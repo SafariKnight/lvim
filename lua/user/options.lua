@@ -37,7 +37,7 @@ lvim.builtin.dap.active = true
 -- 	"yaml",
 -- }
 
-lvim.builtin.treesitter.ignore_install = { "haskell" }
+-- lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
 lvim.builtin.treesitter.rainbow.enable = true
 
